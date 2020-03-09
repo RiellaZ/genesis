@@ -28,25 +28,19 @@ body {
     margin-left: 30px;
 }
 
-.main {
-
+.screen {
+    margin-left: 165px;
+    margin-right: 165px;
+    box-sizing: border-box;
 }
 
-.grid_container {
-    display: grid;
-    grid-template-columns: repeat(12, 65px);
-    grid-template-rows: repeat(29, 60px);
-    height: 100%;
-    grid-gap: 2px;
-}
+
 
 .main_title {
     font-size: 40px;
     font-weight: bold;
     padding-top:100px;
     padding-bottom: 30px;
-    grid-column: 1 / 6;
-    grid-row: 4 / 5;
 }
 
 .main_text {
@@ -56,53 +50,74 @@ body {
 
 .main_list {
     font-size: 18;
-    font-weight: bold;    
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+
 
 }
 
 .main_list--firstcolumn {
     list-style: none;
     opacity: 50%;
+    
 
 }
 
 .main_list--secondcolumn {
     list-style: none;
+    
+}
+
+.main_img {
+    
+    
 }
 
 .main_img--center {
-    grid-column: 1 / 13;
-    grid-row: 9 / 18;
-
+    width: 950px;
+    height: auto;
 }
 
 .main_text--bottom {
     font-family: Muli;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     opacity: 0.8;
     padding-top: 45px;
+    padding-bottom: 45px;
 }
 
-.main_img--left {
+.img_bottom {
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: space-evenly;
+    grid-gap: 30px;;
+}
+
+.img_bottom--left {
     grid-column: 1 / 5;
-    grid-row: 21 / 26;
+    grid-row: 1 / 7;
+    width: 300px;
 }
 
-.main_img--middle {
+.img_bottom--middle {
     grid-column: 5 / 9;
-    grid-row: 21 / 26;
+    grid-row: 1 /7;
+    width: 300px;
 }
 
-.main_img--right {
-    grid-column: 9 / 12;
-    grid-row: 21 / 26;
+.img_bottom--right {
+    grid-column: 9 / 13;
+    grid-row: 1 / 7;
+    width: 300px;
 }
 
 .footer {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
     box-sizing: border-box;
 }
@@ -117,13 +132,19 @@ body {
     font-weight: bold;
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    
 
 }
 
 .footer_navigation>li {
     margin-left: 30px;
     margin-right: 60px;
+}
+
+.footer_icons {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 20px;
 }
 
 .fab fa-dribbble {
